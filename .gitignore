@@ -2,4 +2,5 @@
 *.DS_Store
 __pycache__
 cubic_matrix_example
-test.pye
+test.py
+parallel.py

@@ -15,6 +15,6 @@ There are some common measurements we use to characterize our crystalline system
 1. Inelastic Neutron Scattering
 
 ## What do I do with the measured data?
-1. Thermodynamic (M vs T) data as measured by the PPMS is analyzed to find the Curie and Weiss constants. Thes Weiss Constant give us insight into the ferromagnetic / antiferromagnetic nature exhibited by our systems. The Curie Constant is used to calculate the effective magnetic moment of our system.
+1. Thermodynamic (M vs T) data as measured by the PPMS is analyzed to find the Curie and Weiss constants. The Weiss Constant give us insight into the ferromagnetic / antiferromagnetic nature exhibited by our systems. The Curie Constant is used to calculate the effective magnetic moment of our system.
 2. Thermodynamic (M vs H) data as measured by the PPMS is analyzed to find saturation points of my compounds.
 3. Neutron data is analyzed to find low lying (in energy) magnetic modes in our systems. Analysis is carried out to determine the Crystal Electric Field Hamiltonian.

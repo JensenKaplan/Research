@@ -1,3 +1,5 @@
 *.ipynb_checkpoints
 *.DS_Store
 __pycache__
+cubic_matrix_example
+test.pye

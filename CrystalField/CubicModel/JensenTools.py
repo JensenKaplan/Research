@@ -27,17 +27,17 @@ def saveMatrix(xmin,xmax,numx,bpfmin,bpfmax,numbpf,LSList,runDir,comp):
 		sio.savemat(runDir+'LS_%i.mat'%LSList[j], savedict)
 	return
 
-def saveMatrixPar(xmin,xmax,numx,bpfmin,bpfmax,numbpf,LSList,runDir,comp,numlevels):
+def saveMatrixPar(xmin,xmax,numx,bpfmin,bpfmax,numbpf,LSList,runDir,numlevels):
 	x = np.linspace(xmin,xmax,numx)
 	bpf = np.linspace(bpfmin,bpfmax,numx)
-	print('Xmin = %0.3f to Xmax = %.3f\nBPFmin = %.3f to BPFmax = %.3f \nwith number of steps in X = %s, Bpf = %s'%(xmin,xmax,bpfmin,bpfmax,numx,numbpf))
+	# print('Xmin = %0.3f to Xmax = %.3f\nBPFmin = %.3f to BPFmax = %.3f \nwith number of steps in X = %s, Bpf = %s'%(xmin,xmax,bpfmin,bpfmax,numx,numbpf))
 
 	for j in range(len(LSList)):
 		savedict = {'X': x, 'B': bpf, 'LS': LSList[j]}
 		# if __name__ == '__main__':
 		with mp.Pool() as P:
 			E = P.starmap(partial(energyCalcKPar,LS = LSList[j], numlevels = numlevels),product(x,bpf))
-			print(E[0])
+			# print(E[0])
 			E = np.reshape(E,(numx,-1,numlevels))
 			# P.close()
 

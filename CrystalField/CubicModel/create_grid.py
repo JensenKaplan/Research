@@ -22,7 +22,7 @@ bpfmin, bpfmax =  -1,1
 numx, numbpf = 200, 200
 
 comp = 'Sr2PrO4'
-runDir = 'cubic_matrix/'
+saveDir = 'cubic_matrix/'
 
 
 # save, load, findCoords = True, False, False
@@ -33,7 +33,7 @@ save, load, findCoords = False, True, True
 
 if(save):
 	if __name__ == '__main__':
-		saveMatrixPar(xmin,xmax,numx,bpfmin,bpfmax,numbpf,LSList,runDir,comp,numlevels)
+		saveMatrixPar(xmin,xmax,numx,bpfmin,bpfmax,numbpf,LSList,saveDir,comp,numlevels)
 
 
 if(load):
